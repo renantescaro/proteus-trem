@@ -1,0 +1,26 @@
+
+program serial_uart_2
+
+MAIN:
+  ' saida ou entrada - 0 saida
+  TRISA = %00000000
+  TRISB = %00000000
+  TRISC = %00000000
+
+  porta = 0
+  portb = 0
+  portc = 0
+
+  Delay_ms(100)
+
+  WHILE true
+    setbit(portc, 0)
+
+    Delay_ms(1000)
+
+    clearbit(portc, 0)
+    setbit(portc, 1)
+    
+    Delay_ms(1000)
+  WEND
+END.
