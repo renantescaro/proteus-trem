@@ -1,0 +1,14 @@
+0	1	mBPic.exe -MSF -DBG -pP16F690 -Y -DL -O11111114 -fo4 -N"C:\Users\renan\Documents\_eletronica\trem_zanon\ler_serial.mbppi" -SP"C:\Users\renan\OneDrive\Documents\Mikroelektronika\mikroBasic PRO for PIC\Defs\" -SP"C:\Users\renan\OneDrive\Documents\Mikroelektronika\mikroBasic PRO for PIC\Uses\P16\" -SP"C:\Users\renan\Documents\_eletronica\trem_zanon\" -SP"C:\Users\renan\Documents\_eletronica\trem_zanon\codigo\" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_UART_b75.mcl" "ler_serial.mbas"	 
+diagnostics: 0	155	Available RAM: 240 [bytes], Available ROM: 4096 [bytes]	 
+diagnostics: 0	133	Compilation Started	C:\Users\renan\Documents\_eletronica\trem_zanon\codigo\ler_serial.mbas
+hint: 1	1015	Hint: Compiling unit "C:\Users\renan\Documents\_eletronica\trem_zanon\codigo\ler_serial.mbas"	ler_serial.mbas
+warning: 15	1506	Warning: Generated baud rate is 9615 bps (error = 0.16 percent)	ler_serial.mbas
+hint: 46	1010	Hint: Unit "ler_serial.mbas" has been recompiled	ler_serial.mbas
+diagnostics: 0	134	Compiled Successfully	C:\Users\renan\Documents\_eletronica\trem_zanon\codigo\ler_serial.mbas
+diagnostics: 0	139	All files Compiled in 0 ms	 
+hint: 0	1144	Used RAM (bytes): 1 (1%)  Free RAM (bytes): 239 (99%)	Used RAM (bytes): 1 (1%)  Free RAM (bytes): 239 (99%)
+hint: 0	1144	Used ROM (program words): 94 (2%)  Free ROM (program words): 4002 (98%)	Used ROM (program words): 94 (2%)  Free ROM (program words): 4002 (98%)
+diagnostics: 0	145	Project Linked Successfully	ler_serial.mbppi
+diagnostics: 0	140	Linked in 46 ms	 
+diagnostics: 0	141	Project 'ler_serial.mbppi' completed: 109 ms	 
+diagnostics: 0	103	Finished successfully: 15 abr 2020, 19:57:58	ler_serial.mbppi

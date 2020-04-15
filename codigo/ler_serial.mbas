@@ -1,0 +1,42 @@
+
+program ler_serial
+dim recebido as byte
+  
+MAIN:
+  ' saida ou entrada - 0 saida
+  TRISA = %00000000
+  TRISB = %00000000
+  TRISC = %00000000
+
+  porta = 0
+  portb = 0
+  portc = 0
+
+  UART1_Init(9600)
+  Delay_ms(100)
+
+  WHILE true
+  
+   if (UART1_Data_Ready() = 1) then
+     recebido = UART1_Read()
+
+     ' liga motor
+     if(recebido = "a") then
+        setbit(portc, 0)
+        
+     ' Desliga Motor
+     else if(recebido = "b") then
+        clearbit(portc, 0)
+
+     ' Liga farol
+     end else(recebido = "c") then
+        setbit(portc, 1)
+
+     ' Deliga farol
+     else if(recebido = "d") then
+        clearbit(portc, 1)
+     end if
+
+   end if
+  WEND
+END.
